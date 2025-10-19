@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 #Step 3: Copy project jar file into the container
-COPY target/dockerPlusGit-0.0.1-SNAPSHOT.jar app.jar
+COPY target/* app.jar
 
 #Step 4: Run the app
-ENTRYPOINT [ "jave", "-jar", "app.jar" ]
+ENTRYPOINT [ "jave", "-jar", "/app/app.jar" ]
