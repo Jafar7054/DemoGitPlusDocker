@@ -8,4 +8,4 @@ WORKDIR /app
 COPY target/* app.jar
 
 #Step 4: Run the app
-ENTRYPOINT [ "java", "-jar", "/app/app.jar" ]
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
